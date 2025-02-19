@@ -4,7 +4,7 @@
 int main() {
     
    
-    int codigodacidade1, numerodepontosturisticos1, codigodacidade2, numerodepontosturisticos2, populaçao1, populaçao2;
+    int codigodacidade1, numerodepontosturisticos1, codigodacidade2, numerodepontosturisticos2, populacao1, populacao2;
     float area1, PIB1, area2, PIB2;
     char cidade1[50], cidade2[50];
 
@@ -50,7 +50,7 @@ int main() {
     printf("------CARTA %d------", codigodacidade1);
     printf("O código da cidade é: %d.\n", codigodacidade1);
     printf("O nome da cidade é: %s.", cidade1);
-    printf("A população da cidade é: %d habitante.\n", populaçao1);
+    printf("A população da cidade é: %d habitante.\n", populacao1);
     printf("A área da cidade é: %f Km².\n", area1);
     printf("O PIB da cidade é: %f, reais.\n", PIB1);
     printf("Nº de pontos turístico é: %d.\n", numerodepontosturisticos1);
@@ -58,7 +58,7 @@ int main() {
     printf("------CARTA %d------", codigodacidade2);
     printf("O código da cidade é: %d.\n", codigodacidade2);
     printf("O nome da cidade é: %s.", cidade2);
-    printf("A população da cidade é: %d habitante.\n", populaçao2);
+    printf("A população da cidade é: %d habitante.\n", populacao2);
     printf("A área da cidade é: %f Km².\n", area2);
     printf("O PIB da cidade é: %f, reais.\n", PIB2);
     printf("Nº de pontos turístico é: %d.\n", numerodepontosturisticos2);

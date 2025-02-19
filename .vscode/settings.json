@@ -1,5 +1,8 @@
 {
     "files.associations": {
         "CartasSuperTrunfo1.C": "cpp"
-    }
+    },
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
+    ]
 }

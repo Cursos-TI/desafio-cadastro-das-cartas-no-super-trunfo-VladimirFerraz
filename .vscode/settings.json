@@ -1,5 +1,10 @@
 {
     "files.associations": {
-        "CartasSuperTrunfoaventureiro.C": "cpp"
-    }
+        "CartasSuperTrunfoaventureiro.C": "cpp",
+        "CartasSuperTrunfoMestre.C": "cpp",
+        "CartaSuperTrunfoMestre.C": "cpp"
+    },
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
+    ]
 }

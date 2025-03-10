@@ -9,18 +9,18 @@ int main() {
 
    
    
-    char estado1 = "TO";
-    char cidade1 = "Palmas";
-    char codigodacidade1 = "A01";
+    estado1 = 'TO';
+    cidade1 = "Palmas";
+    codigodacidade1 = "A01";
     populacao1 = 302692;
     area1 = 2227329;
     PIB1 = 10333419000;
     numerodepontosturisticos1 = 19;
 
 
-    char estado2 = "GO";
-    char cidade2 = "Goiania";
-    char codigodacidade2 = "B01";
+    estado2 = "GO";
+    cidade2 = "Goiania";
+    codigodacidade2 = "B01";
     populacao2 = 1437366;
     area2 = 729296;
     PIB2 = 55314931955;

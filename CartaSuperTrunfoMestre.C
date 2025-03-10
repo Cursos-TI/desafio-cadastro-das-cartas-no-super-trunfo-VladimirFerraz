@@ -85,6 +85,8 @@ int main() {
     printf("O PIB per capita é: %.2f.\n", PIBper2);
     printf("O super poder da carta 2 é: %.2f. \n\n", super2);
 
+    // Comparação
+    
     printf("A carta vencedora para o item 'População' é: %d.\n", populacao1 > populacao2);
     printf("A carta vencedora para o item 'àrea' é: %d.\n", area1 > area2);
     printf("A carta vencedora para o item 'PIB' é: %d.\n", PIB1 > PIB2);

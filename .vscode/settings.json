@@ -2,7 +2,8 @@
     "files.associations": {
         "CartasSuperTrunfoaventureiro.C": "cpp",
         "CartasSuperTrunfoMestre.C": "cpp",
-        "CartaSuperTrunfoMestre.C": "cpp"
+        "CartaSuperTrunfoMestre.C": "cpp",
+        "rascunho1.C": "cpp"
     },
     "githubPullRequests.ignoredPullRequestBranches": [
         "main"

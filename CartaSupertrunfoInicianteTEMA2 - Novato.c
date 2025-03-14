@@ -5,8 +5,7 @@ int main() {
    
     int numerodepontosturisticos1, numerodepontosturisticos2, populacao1, populacao2;
     float area1, PIB1, area2, PIB2, den1, den2, PIBper1, PIBper2, super1, super2;
-    char cidade1[50], cidade2[50], codigodacidade1 [50], codigodacidade2 [50], estado1[50], estado2[50];
-
+    
     char estado1 [50] = "TO";
     char cidade1 [50] = "Palmas";
     char codigodacidade1 [50] = "A01";
@@ -43,7 +42,7 @@ int main() {
     printf("Digite o número de pontos turístico da 2º carta: \n");
     scanf("%d", &numerodepontosturisticos2);
 
-    // Cálculos
+
     den1 = populacao1 / area1;
     den2 = populacao2 / area2;
 
@@ -79,17 +78,62 @@ int main() {
 
     // Comparação
     
-    printf("A carta vencedora para o item 'População' é: %d.\n", populacao1 > populacao2);
-    printf("A carta vencedora para o item 'àrea' é: %d.\n", area1 > area2);
-    printf("A carta vencedora para o item 'PIB' é: %d.\n", PIB1 > PIB2);
-    printf("A carta vencedora para o item 'Pontos turísticos' é: %d.\n", numerodepontosturisticos1 > numerodepontosturisticos2);
-    printf("A carta vencedora para o item 'PIB per Capita' é: %d.\n", PIBper1 > PIBper2);
-    printf("A carta vencedora para o item 'super Poder' é: %d.\n", super1 > super2);
-    printf("A carta vencedora para o item 'densidade Populacional' é: %d.\n\n", den1 < den2);
+    if(populacao1 > populacao2){
+        printf("A carta %s é a vencedora. Com a população de %d. A carta perdedora tem a população de %d.\n", cidade1, populacao1, populacao2);
+    }
+    else{
+        printf("A carta %s é a vencedora. Com a população de %d. A carta perdedora tem a população de %d.\n", cidade2, populacao2, populacao1);
+    }
+
+
+    if(area1 > area2){
+        printf("A carta %s é a vencedora. Com a área de %.2f. A carta perdedora tem a área de %.2f.\n", cidade1, area1, area2);
+    }
+    else{
+        printf("A carta %s é a vencedora. Com a área de %.2f. A carta perdedora tem a área de %.2f.\n", cidade2, area2, area1);
+    }
+
+
+    if(PIB1 > PIB2){
+        printf("A carta %s é a vencedora. Com o PIB de %.2f.A carta perdedora tem o PIB de %.2f.\n", cidade1, PIB1, PIB2);
+    }
+    else{
+        printf("A carta %s é a vencedora. Com o PIB %.2f. A carta perdedora tem o PIB de %.2f.\n", cidade2, PIB2, PIB1);
+    }
+
+
+    if(numerodepontosturisticos1 > numerodepontosturisticos2){
+        printf("A carta %s é a vencedora. Com o número de pontos turístico de %d. A carta perdedora tem o número de Pontos turístico de %d.\n", cidade1, numerodepontosturisticos1, numerodepontosturisticos2);
+    }
+    else{
+        printf("A carta %s é a vencedora. Com o número de pontos turístico de %d. A carta perdedora tem o número de Pontos turístico de %d.\n", cidade2, numerodepontosturisticos2, numerodepontosturisticos1);
+    }
+
+
+    if(den1 < den2){
+        printf("A carta %s é a vencedora. Com a densidade demográfica de %.2f. A carta perdedora tem a densidade demográfica de %.2f.\n", cidade1, den1, den2);
+    }
+    else{
+        printf("A carta %s é a vencedora. Com a densidade demográfica de %.2f. A carta perdedora tem a densidade demográfica de %.2f.\n", cidade2, den2, den1);
+    }
+
+
+    if(PIBper1 > PIBper2){
+        printf("A carta %s é a vencedora. Com o PIB per Capita de %.2f. A carta perdedora tem o PIB per Capita de %.2f.\n", cidade1, PIBper1, PIBper2);
+    }
+    else{
+        printf("A carta %s é a vencedora. Com o PIB per Capita de %.2f. A carta perdedora tem o PIB per Capita de %.2f.\n", cidade2, PIBper2, PIBper1);
+    }
+
+    if(super1 > super2){
+        printf("A carta %s é a vencedora. Com o Super Poder de %.2f. A carta perdedora tem o super poder de %.2f.\n", cidade1, super1, super2);
+    }
+    else{
+        printf("A carta %s é a vencedora. Com o super poder de %.2f. A carta perdedora tem o spuer poder de %.2f.\n", cidade2, super2, super1);
+    }
+
 
 
     return 0;
-
-
 
 }

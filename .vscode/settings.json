@@ -3,7 +3,8 @@
         "CartasSuperTrunfoaventureiro.C": "cpp",
         "CartasSuperTrunfoMestre.C": "cpp",
         "CartaSuperTrunfoMestre.C": "cpp",
-        "rascunho1.C": "cpp"
+        "rascunho1.C": "cpp",
+        "CartaSuperTrunfo - Tema 2 - Mestre.C": "cpp"
     },
     "githubPullRequests.ignoredPullRequestBranches": [
         "main"

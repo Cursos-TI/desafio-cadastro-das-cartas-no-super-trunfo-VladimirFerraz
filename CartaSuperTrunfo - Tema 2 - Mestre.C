@@ -37,7 +37,7 @@ int main() {
         printf("Digite a população da 2º Carta:\n");
         scanf("%d", &populacao2);
         
-        resultado1 = populacao1 > populacao2 ? printf("Carta %s VENCEU!!\n", cidade1) : printf("Carta %s VENCEU!!\n", cidade2);
+        resultado1 = populacao1 > populacao2 ? 1 : 0;
 
         break;
 
@@ -46,11 +46,11 @@ int main() {
             
         printf("Você escolheu o atributo Área.\n");
         printf("Digite a área da 1º Carta:\n");
-        scanf("%d", &area1);
+        scanf("%f", &area1);
         printf("Digite a área da 2º Carta:\n");
-        scanf("%d", &area2);
+        scanf("%f", &area2);
 
-        resultado1 = area1 > area2 ? printf("Carta %s VENCEU!!\n", cidade1) : printf("Carta %s VENCEU!!\n", cidade2);
+        resultado1 = area1 > area2 ? 1 : 0;
 
         break;
 
@@ -59,11 +59,11 @@ int main() {
         
         printf("Você escolheu o atributo PIB.\n");
         printf("Digite a PIB da 1º Carta:\n");
-        scanf("%d", &PIB1);
+        scanf("%f", &PIB1);
         printf("Digite a população da 2º Carta:\n");
-        scanf("%d", &PIB2);
+        scanf("%f", &PIB2);
 
-        resultado1 = PIB1 > PIB2 ? printf("Carta %s VENCEU!!\n", cidade1) : printf("Carta %s VENCEU!!\n", cidade2);
+        resultado1 = PIB1 > PIB2 ? 1 : 0;
 
         break;
 
@@ -76,7 +76,7 @@ int main() {
         printf("Digite o número de pontos turístico da 2º carta: \n");
         scanf("%d", &pontotur2);
 
-        resultado1 = pontotur1 > pontotur2 ? printf("Carta %s VENCEU!!\n", cidade1) : printf("Carta %s VENCEU!!\n", cidade2);
+        resultado1 = pontotur1 > pontotur2 ? 1 : 0;
 
         break;
 
@@ -96,7 +96,7 @@ int main() {
         den1 = populacao1 / area1;
         den2 = populacao2 / area2;
 
-        resultado1 = den1 > den2 ? printf("Carta %s VENCEU!!\n", cidade1) : printf("Carta %s VENCEU!!\n", cidade2);
+        resultado1 = den1 < den2 ? 1 : 0;
 
         break;
 
@@ -116,7 +116,7 @@ int main() {
         PIBper1 = PIB1 / populacao1;
         PIBper2 = PIB2 / populacao2;
 
-        resultado1 = PIBper1 > PIBper2 ? printf("Carta %s VENCEU!!\n", cidade1) : printf("Carta %s VENCEU!!\n", cidade2);
+        resultado1 = PIBper1 > PIBper2 ? 1 : 0;
 
         break;
     
@@ -150,7 +150,7 @@ int main() {
             printf("Digite a população da 2º Carta:\n");
             scanf("%d", &populacao2);
             
-            resultado2 = populacao1 > populacao2 ? printf("Carta %s VENCEU!!\n", cidade1) : printf("Carta %s VENCEU!!\n", cidade2);
+            resultado2 = populacao1 > populacao2 ? 1 : 0;
     
             break;
     
@@ -159,11 +159,11 @@ int main() {
                 
             printf("Você escolheu o atributo Área.\n");
             printf("Digite a área da 1º Carta:\n");
-            scanf("%d", &area1);
+            scanf("%f", &area1);
             printf("Digite a área da 2º Carta:\n");
-            scanf("%d", &area2);
+            scanf("%f", &area2);
     
-            resultado2 = area1 > area2 ? printf("Carta %s VENCEU!!\n", cidade1) : printf("Carta %s VENCEU!!\n", cidade2);
+            resultado2 = area1 > area2 ? 1 : 0;
     
             break;
     
@@ -172,11 +172,11 @@ int main() {
             
             printf("Você escolheu o atributo PIB.\n");
             printf("Digite a PIB da 1º Carta:\n");
-            scanf("%d", &PIB1);
+            scanf("%f", &PIB1);
             printf("Digite a população da 2º Carta:\n");
-            scanf("%d", &PIB2);
+            scanf("%f", &PIB2);
     
-            resultado2 = PIB1 > PIB2 ? printf("Carta %s VENCEU!!\n", cidade1) : printf("Carta %s VENCEU!!\n", cidade2);
+            resultado2 = PIB1 > PIB2 ? 1 : 0;
     
             break;
     
@@ -189,7 +189,7 @@ int main() {
             printf("Digite o número de pontos turístico da 2º carta: \n");
             scanf("%d", &pontotur2);
     
-            resultado2 = pontotur1 > pontotur2 ? printf("Carta %s VENCEU!!\n", cidade1) : printf("Carta %s VENCEU!!\n", cidade2);
+            resultado2 = pontotur1 > pontotur2 ? 1 : 0;
     
             break;
     
@@ -209,7 +209,7 @@ int main() {
             den1 = populacao1 / area1;
             den2 = populacao2 / area2;
     
-            resultado2 = den1 > den2 ? printf("Carta %s VENCEU!!\n", cidade1) : printf("Carta %s VENCEU!!\n", cidade2);
+            resultado2 = den1 < den2 ? 1 : 0;
     
             break;
     
@@ -229,7 +229,7 @@ int main() {
             PIBper1 = PIB1 / populacao1;
             PIBper2 = PIB2 / populacao2;
     
-            resultado2 = PIBper1 > PIBper2 ? printf("Carta %s VENCEU!!\n", cidade1) : printf("Carta %s VENCEU!!\n", cidade2);
+            resultado2 = PIBper1 > PIBper2 ? 1 : 0;
     
             break;
         
@@ -239,13 +239,14 @@ int main() {
             }   
         }   
         
-    if(resultado1 == resultado2){
+    if(resultado1 && resultado2){
         printf("---------------PARABÉNS, você VENCEU o jogo!!!---------------\n");
     }else if(resultado1 != resultado2){
         printf("############### O Jogo EMPATOU!!! ###############\n");
     }else{
         printf("*************** INFELIZMENTE, você PERDEU o jogo ***************\n");
-    }        
+    }
+      
 
 
 
